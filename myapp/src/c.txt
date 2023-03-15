@@ -1,0 +1,18 @@
+import firebase from "firebase";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDi0TGF6ZNQy9l0g8-OTUShrlcBQ4gpd7w",
+  authDomain: "clone-94196.firebaseapp.com",
+  projectId: "clone-94196",
+  storageBucket: "clone-94196.appspot.com",
+  messagingSenderId: "838096154267",
+  appId: "1:838096154267:web:1f1b8e22e8a1d5daee203e"
+};
+
+const firebaseApp = firebase.initializeApp(firebaseConfig)
+
+const db = firebaseApp.firestore();
+const auth = firebase.auth();
+
+export { db, auth};
